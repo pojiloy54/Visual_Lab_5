@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="100"
+        x:Class="Visual_Lab_5.Views.RegexWindow"
+        Icon="/Assets/avalonia-logo.ico"
+		Width="450" Height="100"
+        Title="RegexWindow">
+
+	<Grid ShowGridLines="false">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+		<TextBox Text="{Binding PatternOld}" Grid.Row="0"/>
+		<Button Name="OKButton" Content="OK" HorizontalContentAlignment="Center" Grid.Row="1" Width="450"/>
+		<Button Name="CancelButton" Content="Cancel" HorizontalContentAlignment="Center" Grid.Row="2" Width="450"/>
+
+	</Grid>
+
+</Window>
